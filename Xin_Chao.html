@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xin chào</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      margin: 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 10px;
+    }
+    .item {
+      position: relative;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .caption {
+      text-align: center;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+    .pagination {
+      text-align: center;
+      padding: 20px;
+    }
+    .pagination a {
+      margin: 0 5px;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: white;
+      background-color: #007BFF;
+      border-radius: 5px;
+    }
+    .pagination a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Xin chào</h1>
+  </header>
+
+  <div class="gallery">
+    <!-- Ảnh và chú thích -->
+    <div class="item">
+      <img src="image1.jpg" alt="Image 1">
+      <div class="caption">Chú thích ảnh 1</div>
+    </div>
+    <div class="item">
+      <img src="image2.jpg" alt="Image 2">
+      <div class="caption">Chú thích ảnh 2</div>
+    </div>
+    <!-- Thêm các ảnh khác tương tự -->
+  </div>
+
+  <!-- Thanh phân trang -->
+  <div class="pagination">
+    <a href="#">&laquo; Trước</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">Tiếp &raquo;</a>
+  </div>
+</body>
+</html>
